@@ -19,8 +19,8 @@ if Dork == 1 :
     W1_url=GS_url+D_url1+Count
     work1 = requests.get(W1_url)
     data=work1.text
-    soup=BeautifulSoup(data)
-    for text in soup.find_all('a', "html.parser"):
+    soup=BeautifulSoup(data, "html.parser")
+    for text in soup.find_all('a'):
         list.append(text.get('href'))
     filter=raw_input("Enter, what you want to filter word::|>")
     for txt in list:

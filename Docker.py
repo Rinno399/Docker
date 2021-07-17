@@ -6,7 +6,7 @@ headers = {
 	}
 GS_url="https://www.google.com/search?q="
 list=[]
-filter=str("id=")
+filter = "id"
 Count=raw_input("Enter country name::")
 
 print("       [+]Choose Option[+]")
@@ -24,11 +24,11 @@ if Dork == 1 :
     soup=BeautifulSoup(data, "html.parser")
     for text in soup.find_all('a'):
         list.append(text.get('href'))
-    for txt in list:
-        if filter in txt:
-            print("!!!Found!!!",Count)
-            print(txt)
-            print("")
+        for text in list:
+            if filter in text:
+                print("!!!Found!!!",Count)
+                print(text)
+                print("")
 
 else:
      print("Coming Soon")

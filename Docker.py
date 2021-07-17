@@ -20,7 +20,7 @@ if Dork == 1 :
     work1 = requests.get(W1_url)
     data=work1.text
     soup=BeautifulSoup(data)
-    for text in soup.all_find('a')
+    for text in soup.all_find('a'):
         list.append(text.get('href'))
     filter=raw_input("Enter, what you want to filter word::|>")
     for txt in list:

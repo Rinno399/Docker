@@ -1,35 +1,36 @@
-import request
+import requests
 
 from bs4 import BeautifulSoup
 
 GS_url="https://www.google.com/search?q="
 list=[]
 
-Count=input("Enter country name::")
+Count=raw_input("Enter country name::")
 
-print="[+]Choose Option[+]"
-print="[1]Docker(1)"
-print="[2]Docker(2)"
-print="[3]Docker(3)"
-Dork=str(input("Enter your choice number::")
+print("[+]Choose Option[+]")
+print("[1]Docker(1)")
+print("[2]Docker(2)")
+print("[3]Docker(3)")
+Dork=input("Enter your choice number::")
 
-if Dork == 1:
-    (
+if Dork == 1 :
+  
     D_url1="Inurl:/php?id=?"
-    W1_url=GS_url+D_url+Count
+    W1_url=GS_url+D_url1+Count
     work1 = requests.get(W1_url)
     data=work1.text
     soup=BeautifulSoup(data)
     for text in soup.all_find('a')
-        re = text.get('href')
-        print("Found::|>",re)
+        list.append(text.get('href'))
     filter=raw_input("Enter, what you want to filter word::|>")
-    list.append(re)
-    for text in list:
-        if filter in text:
-            print("Found:|>",text)
-   ) 
+    for txt in list:
+        if filter in txt:
+            print("Found::|>",txt)
+        else:
+            print("Not Found")
+            break()
+             
+
 else:
-     (
      print("Coming Soon")
-     ) 
+ 

@@ -26,8 +26,6 @@ if Dork == 1 :
     for txt in list:
         if filter in txt:
             print(txt)
-        else:
-            print("")
              
 
 else:

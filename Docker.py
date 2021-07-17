@@ -19,7 +19,7 @@ if Dork == 1 :
   
     D_url1="Inurl:/php?id=?"
     W1_url=GS_url+D_url1+Count
-    work1 = requests.get(W1_url)
+    work1 = requests.get(W1_url, headers=headers)
     data=work1.text
     soup=BeautifulSoup(data, "html.parser")
     for text in soup.find_all('a'):

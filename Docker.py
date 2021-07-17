@@ -9,10 +9,10 @@ list=[]
 filter=str("id=")
 Count=raw_input("Enter country name::")
 
-print("          [+]Choose Option[+]")
-print("          [1]Docker(1)")
-print("          [2]Docker(2)")
-print("          [3]Docker(3)")
+print("       [+]Choose Option[+]")
+print("    [1]Docker(1)")
+print("  [2]Docker(2)")
+print("[3]Docker(3)")
 Dork=input("Enter your choice number::|>")
 
 if Dork == 1 :
@@ -26,7 +26,7 @@ if Dork == 1 :
         list.append(text.get('href'))
     for txt in list:
         if filter in txt:
-            print("⌵⌵⌵Found⌵⌵⌵For",Count)
+            print("!!!Found!!!",Count)
             print(txt)
             print("")
 

@@ -30,6 +30,34 @@ if Dork == "1" :
             print(txt)
             print("")
 
-else:
-     print("Coming Soon")
+elif Dork == "2" :
+    list2=[]
+    D_url2="inurl page.php? id= site:"
+    W2_url=GS_url+D_url2+Count
+    work2 = requests.get(W2_url, headers=headers)
+    data2=work2.text
+    soup2=BeautifulSoup(data2, "html.parser")
+    for text in soup2.find_all('a', href=True):
+        list2.append(text.get('href'))
+  
+    for txt in list2:
+        if fff in txt:
+            print("[++]Found[++]")
+            print(txt)
+            print("")
+elif Dork == "3" :
+    list3=[]
+    D_url3="inurl index.php?id="
+    W3_url=GS_url+D_url3+Count
+    work3 = requests.get(W3_url, headers=headers)
+    data3=work3.text
+    soup3=BeautifulSoup(data3, "html.parser")
+    for text in soup3.find_all('a', href=True):
+        list3.append(text.get('href'))
+  
+    for txt in list3:
+        if fff in txt:
+            print("[++]Found[++]")
+            print(txt)
+            print("")
  

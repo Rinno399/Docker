@@ -23,9 +23,9 @@ if Dork == "1" :
     soup=BeautifulSoup(data, "html.parser")
     for text in soup.find_all('a', href=True):
         list.append(text.get('href'))
-    filter=input("Enter, what you want to filter word::|>")
+  
     for txt in list:
-        if filter in txt:
+        if fff in txt:
             print("[++]Found[++]")
             print(txt)
             print("")

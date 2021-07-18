@@ -60,4 +60,6 @@ elif Dork == "3" :
             print("[++]Found[++]")
             print(txt)
             print("")
+else:
+    print("Something wrong")
  

@@ -1,19 +1,20 @@
 import requests
 from bs4 import BeautifulSoup
-import OS
-os.system("figlet Rinno")
+print("[+]This tool is Only For Beginner[+]")
+print(">"*50)
+print("[+]"*50)
 headers = {
 	"User-Agent": "Mozilla/5.0 (Windows NT 10.0; rv:78.0) Gecko/20100101 Firefox/78.0"
 	}
 GS_url="https://www.google.com/search?q="
 
-Count=input("Enter country name or gov site::|>")
+Count=input("Enter country name or gov site or other::|>")
 
 print("[+]Choose Option[+]")
 print("")
-print("    [1]Docker(1)")
-print("      [2]Docker(2)")
-print("        [3]Docker(3)")
+print("    [1]Docker(Inurl:/php?id=?)")
+print("      [2]Docker(inurl page.php? id=)")
+print("        [3]Docker(inurl product.php?id=)")
 Dork=input("Enter your choice number::")
 fff=("id=")
 if Dork == "1" :
@@ -59,7 +60,7 @@ elif Dork == "3" :
   
     for txt in list3:
         if fff in txt:
-            print("[++]Found[++]")
+            print("[++++]Found[++++]")
             print(txt)
             print("")
 else:

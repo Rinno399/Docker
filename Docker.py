@@ -1,6 +1,7 @@
 import requests
-
 from bs4 import BeautifulSoup
+import OS
+os.system("figlet Rinno")
 headers = {
 	"User-Agent": "Mozilla/5.0 (Windows NT 10.0; rv:78.0) Gecko/20100101 Firefox/78.0"
 	}
@@ -9,6 +10,7 @@ GS_url="https://www.google.com/search?q="
 Count=input("Enter country name or gov site::|>")
 
 print("[+]Choose Option[+]")
+print("")
 print("    [1]Docker(1)")
 print("      [2]Docker(2)")
 print("        [3]Docker(3)")
@@ -32,7 +34,7 @@ if Dork == "1" :
 
 elif Dork == "2" :
     list2=[]
-    D_url2="inurl page.php? id= site:"
+    D_url2="inurl page.php? id="
     W2_url=GS_url+D_url2+Count
     work2 = requests.get(W2_url, headers=headers)
     data2=work2.text
@@ -47,7 +49,7 @@ elif Dork == "2" :
             print("")
 elif Dork == "3" :
     list3=[]
-    D_url3="inurl index.php?id="
+    D_url3="inurl product.php?id="
     W3_url=GS_url+D_url3+Count
     work3 = requests.get(W3_url, headers=headers)
     data3=work3.text

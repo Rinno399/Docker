@@ -26,7 +26,7 @@ if Dork == "1" :
     filter=input("Enter, what you want to filter word::|>")
     for txt in list:
         if filter in txt:
-            print("[++]Found[++]"
+            print("[++]Found[++]")
             print(txt)
             print("")
 

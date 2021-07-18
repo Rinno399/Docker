@@ -2,7 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 print("[+]This tool is Only For Beginner[+]")
 print(">"*50)
-print("[+]"*50)
+print("[+]"*33)
 headers = {
 	"User-Agent": "Mozilla/5.0 (Windows NT 10.0; rv:78.0) Gecko/20100101 Firefox/78.0"
 	}
@@ -16,6 +16,7 @@ print("    [1]Docker(Inurl:/php?id=?)")
 print("      [2]Docker(inurl page.php? id=)")
 print("        [3]Docker(inurl product.php?id=)")
 Dork=input("Enter your choice number::")
+print("[++]Please wait, patient[++]")
 fff=("id=")
 if Dork == "1" :
     list=[]

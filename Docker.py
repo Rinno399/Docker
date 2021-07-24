@@ -12,7 +12,7 @@ headers = {
 	}
 GS_url="https://www.google.com/search?q="
 
-Count=input("Enter country name or gov site or other::"+'\033[1;31m'+|>")
+Count=input("Enter country name or gov site or other::"+'\033[1;31m'+"|>")
 print('\033[39m')
 print('\033[2;32m'+"[+]Choose Option[+]")
 print('\033[39m')

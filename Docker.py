@@ -1,9 +1,12 @@
 import requests
 from bs4 import BeautifulSoup
-print('\033[1;32m'+"[+]This tool is Only For Beginner[+]")
-print(">"*50)
-print("[[__]]Creator>>Rinno[[__]]")
+print('\033[1;32m'+"[+]This tool is Only For Beginner[+]"+'033[39m')
+print('\033[2;35m'+">"*50+'\033[39m')
+print('\033[1;36m'+"[[__]]Creator>>Rinno[[__]]")
+print("This Tool is probably same other tool ")
+print("So,Crd to everyone")
 print("[+]"*33)
+print('\033[39m')
 headers = {
 	"User-Agent": "Mozilla/5.0 (Windows NT 10.0; rv:78.0) Gecko/20100101 Firefox/78.0"
 	}
@@ -11,12 +14,13 @@ GS_url="https://www.google.com/search?q="
 
 Count=input("Enter country name or gov site or other::|>")
 
-print("[+]Choose Option[+]")
-print("")
-print("    [1]Docker(Inurl:/php?id=?)")
+print('\033[2;32m'+"[+]Choose Option[+]")
+print('\033[39m')
+print('\033[1;33m"    [1]Docker(Inurl:/php?id=?)")
 print("      [2]Docker(inurl page.php? id=)")
 print("        [3]Docker(inurl product.php?id=)")
-Dork=input("Enter your choice number::")
+print('\033[39m')
+Dork=input("Enter your choice number::"+'\033[31m')
 print("[++]Please wait, patient[++]")
 fff=("id=")
 if Dork == "1" :
@@ -31,8 +35,8 @@ if Dork == "1" :
   
     for txt in list:
         if fff in txt:
-            print("[++]Found[++]")
-            print(txt)
+            print('\033[1;34m'+"[++]Found[++]"+'\033[39m')
+            print('\033[1;36m'+txt+'\033[39m')
             print("")
 
 elif Dork == "2" :
@@ -47,8 +51,8 @@ elif Dork == "2" :
   
     for txt in list2:
         if fff in txt:
-            print("[++]Found[++]")
-            print(txt)
+            print('\033[1;34m'+"[++]Found[++]"+'\033[39m')
+            print('\033[1;36m'+txt+'\033[39m')
             print("")
 elif Dork == "3" :
     list3=[]
@@ -62,9 +66,9 @@ elif Dork == "3" :
   
     for txt in list3:
         if fff in txt:
-            print("[++++]Found[++++]")
-            print(txt)
+            print('\033[1;34m'+"[++]Found[++]"+'\033[39m')
+            print('\033[1;36m'+txt+'\033[39m')
             print("")
 else:
-    print("Something wrong")
+    print('\033[1;31m'+"Something wrong"+'\033[39m')
  

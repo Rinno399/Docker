@@ -1,6 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
-print('\033[1;32m'+"[+]This tool is Only For Beginner[+]"+'033[39m')
+print('\033[1;32m'+"[+]This tool is Only For Beginner[+]"+'\033[39m')
 print('\033[2;35m'+">"*50+'\033[39m')
 print('\033[1;36m'+"[[__]]Creator>>Rinno[[__]]")
 print("This Tool is probably same other tool ")
@@ -12,15 +12,15 @@ headers = {
 	}
 GS_url="https://www.google.com/search?q="
 
-Count=input("Enter country name or gov site or other::|>")
-
+Count=input("Enter country name or gov site or other::"+'\033[1;31m'+|>")
+print('\033[39m')
 print('\033[2;32m'+"[+]Choose Option[+]")
 print('\033[39m')
 print('\033[1;33m'+"    [1]Docker(Inurl:/php?id=?)")
 print("      [2]Docker(inurl page.php? id=)")
 print("        [3]Docker(inurl product.php?id=)")
 print('\033[39m')
-Dork=input("Enter your choice number::"+'\033[31m')
+Dork=input("Enter your choice number::"+'\033[1;31m')
 print("[++]Please wait, patient[++]")
 fff=("id=")
 if Dork == "1" :

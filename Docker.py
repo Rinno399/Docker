@@ -2,7 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 print('\033[1;32m'+"[+]This tool is Only For Beginner[+]"+'\033[0m')
 print('\033[2;35m'+">"*50+'\033[0m')
-print('\033[1;36m'+"[[__]]Creator>>Rinno[[__]]")
+print('\033[5;36m'+"[[__]]Creator>>Rinno[[__]]\033[1;36m")
 print("This Tool is probably same other tool ")
 print("So,Crd to everyone")
 print("[+]"*33)
